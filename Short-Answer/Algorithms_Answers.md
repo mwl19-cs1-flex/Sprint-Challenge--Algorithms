@@ -15,5 +15,15 @@ This function is only testing against the value of bunnies (n in our case) and i
 
 ## Exercise II
 
+I can do this naively and drop an egg off of each floor until the egg does not break when dropped, or I can tackle this problem as if I were using Binary Search. I would take the amount of floors in the building and divide them by half, and start on that floor. When dropping the egg, if the egg broke at that floor, I could immediately cancel out the entire upper half of the building, and I would repeat my process with the new middle. 
 
+If, when using the new middle, the egg did not break, I would cancel out the entire lower half of that middle, and repeat the process again with a new middle between my original starting point and my second middle value. I would repeat this process again until I found the true middle.
+
+Here is what the code would look like
+
+def binary_search(n, f):
+    f = len(n) // 2
+    egg_breaks = True
+    while egg_breaks is True:
+        if 
 
