@@ -21,9 +21,17 @@ If, when using the new middle, the egg did not break, I would cancel out the ent
 
 Here is what the code would look like
 
-def binary_search(n, f):
-    f = len(n) // 2
-    egg_breaks = True
-    while egg_breaks is True:
-        if 
+def binary_eggs(n, f)
+    n is the number of floors total
+    f is the current middle 
+    I will find f by taking the n and dividing it in half.
+    f will be set to that value
 
+    egg_breaks = False
+    while egg_breaks is True:
+        if I can find f of n,
+            divide f in half minus one and recurse the function
+        if I cannot
+            divide f in half plus one and recurse the function
+
+This algorithm is log of n. 
